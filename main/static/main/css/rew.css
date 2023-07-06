@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    font-family: 'IBM Plex Sans';
+}
+header{
+left: 0;
+right: 0;
+text-align: center;
+background: #00BA7A;
+border: 0;
+border-radius: 10px;
+padding: 10px 20px;
+font-style: normal;
+font-weight: 500;
+font-size: 22px;
+color: white;
+}
+.mainGradient{
+    background: linear-gradient(180deg, #CCF6FF 0%, #FFFFFF 100%);
+    padding: 10px 10px 20px 10px;
+    }
+a{
+align-items: center;
+color: #000000;
+text-decoration: none;
+}
+
+.button{
+background: rgba(0, 186, 122, 0.44);
+border-radius: 10px; 
+border: 0;
+padding: 10px 20px;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+}
+label{
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    color: #66727F;
+}
+select{
+    margin-top: 10px;
+    font-size: 18px;
+    width: 70%;
+    height: 40px;
+    border: 0;
+}
+option{
+    font-size: 15px;
+    border: 0;
+}
+form{
+    text-align: center;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input{
+    width: 60%;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 7px auto 0 auto;
+    border: 0;
+}
+textarea{
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    font-size: 20px;
+}
+.commentTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+.commentText{
+    font-weight: 400;
+    font-size: 22px;
+    white-space: normal;
+    overflow-y: scroll;
+}
+
+.comment{
+    margin: 10px;
+    margin-top: 7px;
+    border: 1px #176BE9 solid;
+    padding: 5px 10px;
+    border-radius: 0.3em;
+    display: flex;
+    flex-direction: column;
+    background-color: #CEF3FF;
+}
+.buttonsBack{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttonBack{
+white-space: nowrap;
+width:220px;
+font-size: 20px;
+margin-top: 10px;
+padding: 10px;
+border: 1px solid #176BE9;
+background: rgba(0, 186, 122, 0.44);
+border-radius: 10px; 
+font-style: normal;
+font-weight: 500;
+color: #FFFFFF;
+text-align: center;
+}
+
+/*@media only screen and (min-width: 380px) and (max-width: 600px){
+    .form-control {
+        font-size: 20px;
+    }
+    .button{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    label{
+        font-size: 24px;
+    }
+    form{
+        font-size: 18px;
+
+    }
+    input{
+        margin-top: 7px;
+    }
+    .commentTitle{
+        font-size: 28px;
+    }
+    small{
+        font-size: 20px; 
+    }
+    .commentText{
+        margin-top: 5px;
+        font-size: 22px;
+    }
+    .button{
+    font-size: 30px;
+    }
+    }
