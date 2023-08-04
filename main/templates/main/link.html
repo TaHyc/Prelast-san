@@ -11,24 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-    Связь
-</header>
 
-<div class="mainGradient">
-    <div class="mapt">
-        <ul>
-            {% for link in links %}
-            <li>
-                <h3 style="text-align: {% if link.title %}left{% else %}center{% endif %};">{{ link.title|default:"" }}</h3>
-                <p style="text-align: left;">{{ link.content|default:"" }}</p>
-                <p style="text-align: left;">{{ link.tel1|default:"" }}</p>
-                <p style="text-align: left;">{{ link.tel2|default:"" }}</p>
-                <p style="text-align: left;">{{ link.tel3|default:"" }}</p>
-            </li>
-            {% endfor %}
-        </ul>
-    </div>
+<header>Связь</header>
+
+<div class="mainGradientt" style="font-family: 'IBM Plex Sans'; padding: 10px; font-size: 25px;">
+    
+        
+            <div class='quest'>Возник вопрос? Звоните нам!</div>
+            <div style="font-weight: 400; margin-top: 15px;">Клиентский сервис:<br><a style="color: #3F92D2;" href="tel:+375296630860"> +375296630860</a></div>
+            <div>(пн. - пт. с 8:00 до 17:00)</div>
+            <div style="font-weight: 400; margin-top: 15px;">Ресепшн:<br><a style="color: #3F92D2;" href="tel:+375296630860"> +375296630860</a></div>
+            <div>(круглосуточно)</div>
+
+            <div style="border-top: gray 2px solid ; margin-top: 20px; padding-top: 15px;">В санатории Вы можете застраховаться по программе "Антиклещ".
+                 Для этого обратитесь к администратору ванного отделения.</div>
+
 
     <div class="buttonsBack">
         <a class="buttonBack" href="{% url 'home' %}">Главная</a>

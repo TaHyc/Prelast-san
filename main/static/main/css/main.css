@@ -68,6 +68,11 @@ font-size: 22px;
 width: 40%;
 white-space: nowrap;
 }
+.quest{
+    text-transform: uppercase; 
+    font-weight: 400;
+    font-size: 35px;
+}
 .event{
 margin:10px 15px 10px 15px;
 padding:10px 10px 10px 10px;
@@ -167,15 +172,6 @@ label{
 form{
     text-align: center;
 }
-.mapt{
-    margin-top: 20px;
-}
-.mapt ul{
-    padding-inline-start: 30px;
-    }
-.mapt p{
-font-size: 20px;
-}
 .rules{
 font-style: normal;
 font-weight: 400;
@@ -216,6 +212,8 @@ padding: 10px 15px;
     border-radius: 10%;
     background-color: white;
     margin-top: 10px;
+    overflow: hidden;
+     max-width: 100%;
     /*width: 100%;*/
     /*overflow-x: auto;*/
 }
@@ -230,6 +228,29 @@ padding: 10px 15px;
     width: 100%;
     overflow-x: auto;
 }
+/*.map {
+  overflow: hidden;
+  max-width: 100%;
+}*/
+
+.maap {
+  display: flex;
+  flex-direction: column;
+}
+
+#map-container {
+  margin-top: 200px;
+}
+
+/*.maap {
+  display: flex;
+  flex-direction: column;
+}
+
+#map-container {
+  margin-top: 200px;
+}*/
+
 @media only screen and (min-width: 350px) and (max-width: 450px){
     .form-control {
         font-size: 20px;
