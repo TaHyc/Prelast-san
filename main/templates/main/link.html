@@ -8,26 +8,27 @@
     <link rel="stylesheet" type="text/css" href="{% static 'main/css/main.css'%}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header>Связь</header>
 
-<div class="mainGradientt" style="font-family: 'IBM Plex Sans'; padding: 10px; font-size: 25px;">
+<div class="mainGradientt" style="font-family: 'IBM Plex Sans'; padding: 10px 20px; font-size: 25px;">
     
         
             <div class='quest'>Возник вопрос? Звоните нам!</div>
-            <div style="font-weight: 400; margin-top: 15px;">Клиентский сервис:<br><a style="color: #3F92D2;" href="tel:+375296630860"> +375296630860</a></div>
-            <div>(пн. - пт. с 8:00 до 17:00)</div>
-            <div style="font-weight: 400; margin-top: 15px;">Ресепшн:<br><a style="color: #3F92D2;" href="tel:+375296630860"> +375296630860</a></div>
-            <div>(круглосуточно)</div>
+            {% for link in links %}
+            <div style="font-weight: 600; margin-top: 6%;">{{ link.title|default:"" }}</div>
+            <div style="text-align: left; font-size: 23px; margin-top: 3%; margin-bottom: 3%;">{{ link.content|default:"" }}</div>
+            <a style="color: #3F92D2; font-size: 23px;" href=`tel:{{ link.tel1|default:"" }}`>{{ link.tel1|default:"" }}</a>
+            <a style="color: #3F92D2; font-size: 23px;" href=`tel:{{ link.tel2|default:"" }}`>{{ link.tel2|default:"" }}</a>
+            <a style="color: #3F92D2; font-size: 23px;" href=`tel:{{ link.tel3|default:"" }}`>{{ link.tel3|default:"" }}</a>
+            {% endfor %}
 
-            <div style="border-top: gray 2px solid ; margin-top: 20px; padding-top: 15px;">В санатории Вы можете застраховаться по программе "Антиклещ".
-                 Для этого обратитесь к администратору ванного отделения.</div>
+            <img src="../../../static/main/assets/фонсвязи.png" />
 
-
-    <div class="buttonsBack">
+    <div class="buttonsBack" style="margin-top: -5%;">
         <a class="buttonBack" href="{% url 'home' %}">Главная</a>
     </div>
 </div>
@@ -46,3 +47,6 @@
 </script>
 </body>
 </html>
+
+
+    
