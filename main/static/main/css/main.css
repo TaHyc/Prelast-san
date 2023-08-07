@@ -8,6 +8,7 @@ right: 0;
 text-align: center;
 background: #00BA7A;
 border: 0;
+font-family: "Lobster";
 border-radius: 10px;
 padding: 10px 20px;
 font-style: normal;
@@ -37,8 +38,10 @@ padding: 10px 10px 20px 10px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: "Lobster";
 }
 .buttonBack{
+font-family: "Lobster";
 margin-left: auto;
 margin-right: auto;
 white-space: nowrap;
@@ -143,6 +146,7 @@ padding: 10px 20px;
 font-style: normal;
 letter-spacing: 0.1px;
 color: #FFFFFF;
+font-family: "Lobster";
 }
 .buttonA{
     position: absolute;
